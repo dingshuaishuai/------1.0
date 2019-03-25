@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> ⊙﹏⊙</title>
+		
+		
+		
+		
+		
+		<style>
+		
+			body {
+	
+ 
+				  margin: 0;
+				  overflow: hidden;
+				background-color:#333333;
+				  height: 100%;width: 100%;
+					/*background: url(img/13.jpg);*/
+					background-size:cover;
+				}
+		</style>
+		
+		
+		<script>
+		
+
+//生成从minNum到maxNum的随机数
+	var d=	function randomNum(minNum,maxNum) {
+			switch (arguments.length) {
+				case 1:
+					return parseInt(Math.random() * minNum + 1, 10);
+					break;
+				case 2:
+					return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+					break;
+				default:
+					return 0;
+					break;
+			}
+		}
+//=====================================================================================
+window.onload = function(){
+	a=d(0,74);
+	document.getElementById("bd").background="img/"+a+".jpg";
+
+}
+
+		 
+		  function ht (){
+		   	
+		   	
+		   	document.getElementById("bd").background="img/"+d(0,74)+".jpg";
+			
+		 	
+		   }
+		  
+		  function kg(){
+		  	if(document.getElementById('fra').style.visibility=='visible'){
+		  		
+		  		document.getElementById('fra').style.visibility='hidden';
+		  		
+		  	}else{
+		  		
+		  		document.getElementById('fra').style.visibility='visible';
+		  		
+		  	}
+		  }
+		   
+		   
+		   
+		   
+		   
+		</script>
+		
+		
+		
+		
+	</head>
+	 
+    
+	
+	<body id="bd"> 
+		<div style="height: 40px;">
+			
+			<font style="opacity: 0;color:aliceblue ;" onmouseover="style.opacity=0.5"onmouseout="style.opacity=0" onclick="kg()" >显示/隐藏</font>     
+			<font style="opacity: 0;color:aliceblue ;" onmouseover="style.opacity=0.5"onmouseout="style.opacity=0" onclick="ht()" >换图</font>
+			<font style="opacity: 0;color:aliceblue ;" onmouseover="style.opacity=0.5"onmouseout="style.opacity=0" onclick="javascript:(0)" >添加</font>
+			
+			
+			
+		</div>
+		
+		
+	
+
+		
+
+		
+		
+	</body>
+
+
+</html>
